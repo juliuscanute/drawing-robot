@@ -12,3 +12,9 @@ protoc --nanopb_out=include .\arduino.proto
 ```sh
 protoc --python_out=arduino_interface_client .\arduino.proto
 ```
+
+
+# Run unit tests natively
+```sh
+pio test -e native
+```
