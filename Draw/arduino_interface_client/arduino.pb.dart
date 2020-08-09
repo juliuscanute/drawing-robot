@@ -11,7 +11,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 class Message extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo('Message', createEmptyInstance: create)
-    ..aOS(1, 'description')
+    ..a<$core.int>(1, 'uniqueId', $pb.PbFieldType.O3, protoName: 'uniqueId')
     ..hasRequiredFields = false
   ;
 
@@ -31,12 +31,12 @@ class Message extends $pb.GeneratedMessage {
   static Message _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.String get description => $_getSZ(0);
+  $core.int get uniqueId => $_getIZ(0);
   @$pb.TagNumber(1)
-  set description($core.String v) { $_setString(0, v); }
+  set uniqueId($core.int v) { $_setSignedInt32(0, v); }
   @$pb.TagNumber(1)
-  $core.bool hasDescription() => $_has(0);
+  $core.bool hasUniqueId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDescription() => clearField(1);
+  void clearUniqueId() => clearField(1);
 }
 

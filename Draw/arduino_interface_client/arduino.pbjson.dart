@@ -8,7 +8,7 @@
 const Message$json = const {
   '1': 'Message',
   '2': const [
-    const {'1': 'description', '3': 1, '4': 1, '5': 9, '10': 'description'},
+    const {'1': 'uniqueId', '3': 1, '4': 1, '5': 5, '10': 'uniqueId'},
   ],
 };
 

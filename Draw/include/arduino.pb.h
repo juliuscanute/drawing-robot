@@ -15,21 +15,21 @@ extern "C" {
 
 /* Struct definitions */
 typedef struct _Message {
-    pb_callback_t description;
+    int32_t uniqueId;
 } Message;
 
 
 /* Initializer values for message structs */
-#define Message_init_default                     {{{NULL}, NULL}}
-#define Message_init_zero                        {{{NULL}, NULL}}
+#define Message_init_default                     {0}
+#define Message_init_zero                        {0}
 
 /* Field tags (for use in manual encoding/decoding) */
-#define Message_description_tag                  1
+#define Message_uniqueId_tag                     1
 
 /* Struct field encoding specification for nanopb */
 #define Message_FIELDLIST(X, a) \
-X(a, CALLBACK, SINGULAR, STRING,   description,       1)
-#define Message_CALLBACK pb_default_field_callback
+X(a, STATIC,   SINGULAR, INT32,    uniqueId,          1)
+#define Message_CALLBACK NULL
 #define Message_DEFAULT NULL
 
 extern const pb_msgdesc_t Message_msg;
@@ -38,7 +38,7 @@ extern const pb_msgdesc_t Message_msg;
 #define Message_fields &Message_msg
 
 /* Maximum encoded size of messages (where known) */
-/* Message_size depends on runtime parameters */
+#define Message_size                             11
 
 #ifdef __cplusplus
 } /* extern "C" */
