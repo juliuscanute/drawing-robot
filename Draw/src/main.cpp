@@ -24,7 +24,7 @@ void loop() {
       Serial.println("Failed to encode");
       return;
   }
-
-  Serial.println("Data encoded successfully");
-  delay(10000);
+  Serial.write(buffer, stream.bytes_written);
+  // Serial.println(stream.bytes_written);
+  delay(1000);
 }
