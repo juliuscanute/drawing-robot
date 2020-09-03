@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/message/arduino.pb.c
+arduino.pb.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/message/arduino.pb.h
+
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/message/arduino.pb.h
+pb.h
+-
+

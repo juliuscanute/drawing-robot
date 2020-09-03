@@ -1,6 +1,5 @@
 #ifdef UNIT_TEST
 #include <unity.h>
-
 #include <encoder.h>
 
 void test_valid_encode_status(){
@@ -10,12 +9,6 @@ void test_valid_encode_status(){
     bool status = encode(&message, buffer, 128);
     TEST_ASSERT_EQUAL(true, status);
     TEST_ASSERT_EQUAL_MEMORY("\x08\x64", buffer, 2);
-}
-
-int main( int argc, char **argv) {
-    UNITY_BEGIN();
-    RUN_TEST(test_valid_encode_status);
-    UNITY_END();
 }
 
 #endif

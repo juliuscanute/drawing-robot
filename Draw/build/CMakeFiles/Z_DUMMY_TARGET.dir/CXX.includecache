@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/decoder.cpp
+decoder.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/decoder.h
+
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/decoder.h
+arduino.pb.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/arduino.pb.h
+pb_common.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/pb_common.h
+pb.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/pb.h
+pb_decode.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/pb_decode.h
+
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/encoder.cpp
+encoder.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/encoder.h
+
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/encoder.h
+arduino.pb.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/arduino.pb.h
+pb_common.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/pb_common.h
+pb.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/pb.h
+pb_encode.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/pb_encode.h
+
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/src/main.cpp
+encoder.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/src/encoder.h
+decoder.h
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/src/decoder.h
+Arduino.h
+-
+

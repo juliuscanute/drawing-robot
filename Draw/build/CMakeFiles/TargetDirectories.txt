@@ -1,0 +1,5 @@
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/build/CMakeFiles/Production.dir
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/build/CMakeFiles/edit_cache.dir
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/build/CMakeFiles/Debug.dir
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/build/CMakeFiles/Z_DUMMY_TARGET.dir
+C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/build/CMakeFiles/rebuild_cache.dir

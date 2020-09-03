@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Draw"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/cmake-build-mkr1000usb"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Production">
+				<Option working_dir="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/cmake-build-mkr1000usb"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 Production"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/cmake-build-mkr1000usb"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Debug">
+				<Option working_dir="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/cmake-build-mkr1000usb"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 Debug"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET">
+				<Option output="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/cmake-build-mkr1000usb/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/cmake-build-mkr1000usb"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/include"/>
+					<Add directory="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/src"/>
+					<Add directory="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser"/>
+					<Add directory="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/message"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-cmsis/CMSIS/Include"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-cmsis-atmel/CMSIS/Device/ATMEL"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/cores/arduino"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/variants/mkr1000"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/HID"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/I2S/src"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/SAMD_AnalogCorrection/src"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/SAMD_BootloaderUpdater/src"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/SDU/src"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/SPI"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/USBHost/src"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/Wire"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/7.2.1"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/7.2.1/arm-none-eabi"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/7.2.1/include"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/7.2.1/include-fixed"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/tool-unity"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 Z_DUMMY_TARGET"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET/fast">
+				<Option output="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/cmake-build-mkr1000usb/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/cmake-build-mkr1000usb"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/include"/>
+					<Add directory="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/src"/>
+					<Add directory="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser"/>
+					<Add directory="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/message"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-cmsis/CMSIS/Include"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-cmsis-atmel/CMSIS/Device/ATMEL"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/cores/arduino"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/variants/mkr1000"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/HID"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/I2S/src"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/SAMD_AnalogCorrection/src"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/SAMD_BootloaderUpdater/src"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/SDU/src"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/SPI"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/USBHost/src"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/framework-arduino-samd/libraries/Wire"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/7.2.1"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/7.2.1/arm-none-eabi"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/7.2.1/include"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/7.2.1/include-fixed"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include"/>
+					<Add directory="C:/Users/Julius Canute/.platformio/packages/tool-unity"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 Z_DUMMY_TARGET/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/cmake-build-mkr1000usb"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Julius Canute\Documents\GitHub\drawing-robot\Draw\cmake-build-mkr1000usb\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/cmake_relpath/CMakeLists.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/cmake_relpath/README.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/cmake_relpath/proto/simple.proto">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/cmake_relpath/proto/sub/unlucky.proto">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/cmake_relpath/simple.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/cmake_simple/CMakeLists.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/cmake_simple/README.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/cmake_simple/simple.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/cmake_simple/simple.proto">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/network_server/README.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/network_server/client.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/network_server/common.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/network_server/common.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/network_server/fileproto.options">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/network_server/fileproto.proto">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/network_server/server.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/simple/README.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/simple/simple.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/simple/simple.proto">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/using_union_messages/README.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/using_union_messages/decode.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/using_union_messages/encode.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/examples/using_union_messages/unionproto.proto">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/library.json">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/pb.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/pb_common.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/pb_common.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/pb_decode.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/pb_decode.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/pb_encode.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/.pio/libdeps/mkr1000USB/Nanopb/pb_encode.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/message/arduino.pb.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/message/arduino.pb.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/decoder.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/decoder.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/encoder.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/encoder.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/src/main.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/CMakeListsPrivate.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

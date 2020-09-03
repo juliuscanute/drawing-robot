@@ -1,0 +1,22 @@
+[
+{
+  "directory": "C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/build",
+  "command": "C:\\Users\\JULIUS~1\\PLATFO~1\\packages\\TOOLCH~1\\bin\\AR19DD~1.EXE   -std=gnu11 -Os -ffunction-sections -fdata-sections -Wall -mcpu=cortex-m0plus -mthumb -nostdlib --param max-inline-insns-single=500 -g -std=gnu11 -o CMakeFiles\\Z_DUMMY_TARGET.dir\\lib\\message\\arduino.pb.c.obj -c \"C:\\Users\\Julius Canute\\Documents\\GitHub\\drawing-robot\\Draw\\lib\\message\\arduino.pb.c\"",
+  "file": "C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/message/arduino.pb.c"
+},
+{
+  "directory": "C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/build",
+  "command": "C:\\Users\\JULIUS~1\\PLATFO~1\\packages\\TOOLCH~1\\bin\\AR10B2~1.EXE   -fno-rtti -fno-exceptions -std=gnu++11 -fno-threadsafe-statics -Os -ffunction-sections -fdata-sections -Wall -mcpu=cortex-m0plus -mthumb -nostdlib --param max-inline-insns-single=500 -g -std=gnu++11 -o CMakeFiles\\Z_DUMMY_TARGET.dir\\lib\\parser\\decoder.cpp.obj -c \"C:\\Users\\Julius Canute\\Documents\\GitHub\\drawing-robot\\Draw\\lib\\parser\\decoder.cpp\"",
+  "file": "C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/decoder.cpp"
+},
+{
+  "directory": "C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/build",
+  "command": "C:\\Users\\JULIUS~1\\PLATFO~1\\packages\\TOOLCH~1\\bin\\AR10B2~1.EXE   -fno-rtti -fno-exceptions -std=gnu++11 -fno-threadsafe-statics -Os -ffunction-sections -fdata-sections -Wall -mcpu=cortex-m0plus -mthumb -nostdlib --param max-inline-insns-single=500 -g -std=gnu++11 -o CMakeFiles\\Z_DUMMY_TARGET.dir\\lib\\parser\\encoder.cpp.obj -c \"C:\\Users\\Julius Canute\\Documents\\GitHub\\drawing-robot\\Draw\\lib\\parser\\encoder.cpp\"",
+  "file": "C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/lib/parser/encoder.cpp"
+},
+{
+  "directory": "C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/build",
+  "command": "C:\\Users\\JULIUS~1\\PLATFO~1\\packages\\TOOLCH~1\\bin\\AR10B2~1.EXE   -fno-rtti -fno-exceptions -std=gnu++11 -fno-threadsafe-statics -Os -ffunction-sections -fdata-sections -Wall -mcpu=cortex-m0plus -mthumb -nostdlib --param max-inline-insns-single=500 -g -std=gnu++11 -o CMakeFiles\\Z_DUMMY_TARGET.dir\\src\\main.cpp.obj -c \"C:\\Users\\Julius Canute\\Documents\\GitHub\\drawing-robot\\Draw\\src\\main.cpp\"",
+  "file": "C:/Users/Julius Canute/Documents/GitHub/drawing-robot/Draw/src/main.cpp"
+}
+]
