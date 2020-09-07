@@ -1,4 +1,4 @@
-#include "decoder.h"
+#include <decoder.h>
 
 bool decode(Message *message, uint8_t *buffer, size_t length) {
   *message = Message_init_zero;

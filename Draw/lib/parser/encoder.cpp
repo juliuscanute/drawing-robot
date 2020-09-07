@@ -1,4 +1,4 @@
-#include "encoder.h"
+#include <encoder.h>
 
 bool encode(const Message *message, uint8_t *buffer, size_t buffer_size) {
   pb_ostream_t stream = pb_ostream_from_buffer(buffer, buffer_size);

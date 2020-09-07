@@ -9,7 +9,6 @@ void setup() {
 }
 
 void loop() {
-  decode();
   delay(1000);
 }
 #endif
