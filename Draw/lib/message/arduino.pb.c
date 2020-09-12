@@ -6,7 +6,8 @@
 #error Regenerate this file with the current version of nanopb generator.
 #endif
 
-PB_BIND(Message, Message, AUTO)
+PB_BIND(ArduinoCommand, ArduinoCommand, AUTO)
+
 
 
 

@@ -1,5 +1,9 @@
 syntax = "proto3";
 
-message Message {
-    int32 uniqueId = 1;
+message ArduinoCommand {
+	enum CommandType {
+		SCAN = 0;
+		BATTERY = 1;
+	}
+    CommandType command = 1;
 }

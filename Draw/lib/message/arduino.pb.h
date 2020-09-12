@@ -13,32 +13,44 @@
 extern "C" {
 #endif
 
+/* Enum definitions */
+typedef enum _ArduinoCommand_CommandType {
+    ArduinoCommand_CommandType_SCAN = 0,
+    ArduinoCommand_CommandType_BATTERY = 1
+} ArduinoCommand_CommandType;
+
 /* Struct definitions */
-typedef struct _Message {
-    int32_t uniqueId;
-} Message;
+typedef struct _ArduinoCommand {
+    ArduinoCommand_CommandType command;
+} ArduinoCommand;
+
+
+/* Helper constants for enums */
+#define _ArduinoCommand_CommandType_MIN ArduinoCommand_CommandType_SCAN
+#define _ArduinoCommand_CommandType_MAX ArduinoCommand_CommandType_BATTERY
+#define _ArduinoCommand_CommandType_ARRAYSIZE ((ArduinoCommand_CommandType)(ArduinoCommand_CommandType_BATTERY+1))
 
 
 /* Initializer values for message structs */
-#define Message_init_default                     {0}
-#define Message_init_zero                        {0}
+#define ArduinoCommand_init_default              {_ArduinoCommand_CommandType_MIN}
+#define ArduinoCommand_init_zero                 {_ArduinoCommand_CommandType_MIN}
 
 /* Field tags (for use in manual encoding/decoding) */
-#define Message_uniqueId_tag                     1
+#define ArduinoCommand_command_tag               1
 
 /* Struct field encoding specification for nanopb */
-#define Message_FIELDLIST(X, a) \
-X(a, STATIC,   SINGULAR, INT32,    uniqueId,          1)
-#define Message_CALLBACK NULL
-#define Message_DEFAULT NULL
+#define ArduinoCommand_FIELDLIST(X, a) \
+X(a, STATIC,   SINGULAR, UENUM,    command,           1)
+#define ArduinoCommand_CALLBACK NULL
+#define ArduinoCommand_DEFAULT NULL
 
-extern const pb_msgdesc_t Message_msg;
+extern const pb_msgdesc_t ArduinoCommand_msg;
 
 /* Defines for backwards compatibility with code written before nanopb-0.4.0 */
-#define Message_fields &Message_msg
+#define ArduinoCommand_fields &ArduinoCommand_msg
 
 /* Maximum encoded size of messages (where known) */
-#define Message_size                             11
+#define ArduinoCommand_size                      2
 
 #ifdef __cplusplus
 } /* extern "C" */
