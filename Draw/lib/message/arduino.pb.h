@@ -22,6 +22,8 @@ typedef enum _ArduinoCommand_CommandType {
 /* Struct definitions */
 typedef struct _ArduinoCommand {
     ArduinoCommand_CommandType command;
+    char service_set_id[32];
+    char network_key[32];
 } ArduinoCommand;
 
 
@@ -32,15 +34,19 @@ typedef struct _ArduinoCommand {
 
 
 /* Initializer values for message structs */
-#define ArduinoCommand_init_default              {_ArduinoCommand_CommandType_MIN}
-#define ArduinoCommand_init_zero                 {_ArduinoCommand_CommandType_MIN}
+#define ArduinoCommand_init_default              {_ArduinoCommand_CommandType_MIN, "", ""}
+#define ArduinoCommand_init_zero                 {_ArduinoCommand_CommandType_MIN, "", ""}
 
 /* Field tags (for use in manual encoding/decoding) */
 #define ArduinoCommand_command_tag               1
+#define ArduinoCommand_service_set_id_tag        2
+#define ArduinoCommand_network_key_tag           3
 
 /* Struct field encoding specification for nanopb */
 #define ArduinoCommand_FIELDLIST(X, a) \
-X(a, STATIC,   SINGULAR, UENUM,    command,           1)
+X(a, STATIC,   SINGULAR, UENUM,    command,           1) \
+X(a, STATIC,   SINGULAR, STRING,   service_set_id,    2) \
+X(a, STATIC,   SINGULAR, STRING,   network_key,       3)
 #define ArduinoCommand_CALLBACK NULL
 #define ArduinoCommand_DEFAULT NULL
 
@@ -50,7 +56,7 @@ extern const pb_msgdesc_t ArduinoCommand_msg;
 #define ArduinoCommand_fields &ArduinoCommand_msg
 
 /* Maximum encoded size of messages (where known) */
-#define ArduinoCommand_size                      2
+#define ArduinoCommand_size                      68
 
 #ifdef __cplusplus
 } /* extern "C" */

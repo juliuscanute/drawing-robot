@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+message ArduinoReply {
+  enum EncryptionType {
+    NONE = 0;
+    AUTO = 1;
+    WEP = 2;
+    WPA = 3;
+    WPA2 = 4;
+  }
+  message WifiScanResult {
+    string mac_address = 1;
+    string signal_strength = 2;
+    string service_set_id = 3;
+    EncryptionType enc_type = 4;
+  }
+  message BatteryResult {
+    float voltage = 1;
+  }
+  repeated WifiScanResult scan_result = 1;
+  BatteryResult battery_result = 2;
+}
