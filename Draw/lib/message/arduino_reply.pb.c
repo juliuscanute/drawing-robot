@@ -6,7 +6,7 @@
 #error Regenerate this file with the current version of nanopb generator.
 #endif
 
-PB_BIND(ArduinoReply, ArduinoReply, AUTO)
+PB_BIND(ArduinoReply, ArduinoReply, 2)
 
 
 PB_BIND(ArduinoReply_WifiScanResult, ArduinoReply_WifiScanResult, AUTO)

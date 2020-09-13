@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+import "nanopb.proto";
+
 message ArduinoReply {
   enum EncryptionType {
     NONE = 0;
@@ -9,14 +11,14 @@ message ArduinoReply {
     WPA2 = 4;
   }
   message WifiScanResult {
-    string mac_address = 1;
-    string signal_strength = 2;
-    string service_set_id = 3;
+    string mac_address = 1 [(nanopb).max_size = 32];
+    string signal_strength = 2 [(nanopb).max_size = 32];
+    string service_set_id = 3 [(nanopb).max_size = 32];
     EncryptionType enc_type = 4;
   }
   message BatteryResult {
     float voltage = 1;
   }
-  repeated WifiScanResult scan_result = 1;
+  repeated WifiScanResult scan_result = 1 [(nanopb).max_count = 10];
   BatteryResult battery_result = 2;
 }

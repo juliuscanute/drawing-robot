@@ -28,14 +28,15 @@ typedef struct _ArduinoReply_BatteryResult {
 } ArduinoReply_BatteryResult;
 
 typedef struct _ArduinoReply_WifiScanResult {
-    pb_callback_t mac_address;
-    pb_callback_t signal_strength;
-    pb_callback_t service_set_id;
+    char mac_address[32];
+    char signal_strength[32];
+    char service_set_id[32];
     ArduinoReply_EncryptionType enc_type;
 } ArduinoReply_WifiScanResult;
 
 typedef struct _ArduinoReply {
-    pb_callback_t scan_result;
+    pb_size_t scan_result_count;
+    ArduinoReply_WifiScanResult scan_result[10];
     bool has_battery_result;
     ArduinoReply_BatteryResult battery_result;
 } ArduinoReply;
@@ -48,11 +49,11 @@ typedef struct _ArduinoReply {
 
 
 /* Initializer values for message structs */
-#define ArduinoReply_init_default                {{{NULL}, NULL}, false, ArduinoReply_BatteryResult_init_default}
-#define ArduinoReply_WifiScanResult_init_default {{{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, _ArduinoReply_EncryptionType_MIN}
+#define ArduinoReply_init_default                {0, {ArduinoReply_WifiScanResult_init_default, ArduinoReply_WifiScanResult_init_default, ArduinoReply_WifiScanResult_init_default, ArduinoReply_WifiScanResult_init_default, ArduinoReply_WifiScanResult_init_default, ArduinoReply_WifiScanResult_init_default, ArduinoReply_WifiScanResult_init_default, ArduinoReply_WifiScanResult_init_default, ArduinoReply_WifiScanResult_init_default, ArduinoReply_WifiScanResult_init_default}, false, ArduinoReply_BatteryResult_init_default}
+#define ArduinoReply_WifiScanResult_init_default {"", "", "", _ArduinoReply_EncryptionType_MIN}
 #define ArduinoReply_BatteryResult_init_default  {0}
-#define ArduinoReply_init_zero                   {{{NULL}, NULL}, false, ArduinoReply_BatteryResult_init_zero}
-#define ArduinoReply_WifiScanResult_init_zero    {{{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, _ArduinoReply_EncryptionType_MIN}
+#define ArduinoReply_init_zero                   {0, {ArduinoReply_WifiScanResult_init_zero, ArduinoReply_WifiScanResult_init_zero, ArduinoReply_WifiScanResult_init_zero, ArduinoReply_WifiScanResult_init_zero, ArduinoReply_WifiScanResult_init_zero, ArduinoReply_WifiScanResult_init_zero, ArduinoReply_WifiScanResult_init_zero, ArduinoReply_WifiScanResult_init_zero, ArduinoReply_WifiScanResult_init_zero, ArduinoReply_WifiScanResult_init_zero}, false, ArduinoReply_BatteryResult_init_zero}
+#define ArduinoReply_WifiScanResult_init_zero    {"", "", "", _ArduinoReply_EncryptionType_MIN}
 #define ArduinoReply_BatteryResult_init_zero     {0}
 
 /* Field tags (for use in manual encoding/decoding) */
@@ -66,19 +67,19 @@ typedef struct _ArduinoReply {
 
 /* Struct field encoding specification for nanopb */
 #define ArduinoReply_FIELDLIST(X, a) \
-X(a, CALLBACK, REPEATED, MESSAGE,  scan_result,       1) \
+X(a, STATIC,   REPEATED, MESSAGE,  scan_result,       1) \
 X(a, STATIC,   OPTIONAL, MESSAGE,  battery_result,    2)
-#define ArduinoReply_CALLBACK pb_default_field_callback
+#define ArduinoReply_CALLBACK NULL
 #define ArduinoReply_DEFAULT NULL
 #define ArduinoReply_scan_result_MSGTYPE ArduinoReply_WifiScanResult
 #define ArduinoReply_battery_result_MSGTYPE ArduinoReply_BatteryResult
 
 #define ArduinoReply_WifiScanResult_FIELDLIST(X, a) \
-X(a, CALLBACK, SINGULAR, STRING,   mac_address,       1) \
-X(a, CALLBACK, SINGULAR, STRING,   signal_strength,   2) \
-X(a, CALLBACK, SINGULAR, STRING,   service_set_id,    3) \
+X(a, STATIC,   SINGULAR, STRING,   mac_address,       1) \
+X(a, STATIC,   SINGULAR, STRING,   signal_strength,   2) \
+X(a, STATIC,   SINGULAR, STRING,   service_set_id,    3) \
 X(a, STATIC,   SINGULAR, UENUM,    enc_type,          4)
-#define ArduinoReply_WifiScanResult_CALLBACK pb_default_field_callback
+#define ArduinoReply_WifiScanResult_CALLBACK NULL
 #define ArduinoReply_WifiScanResult_DEFAULT NULL
 
 #define ArduinoReply_BatteryResult_FIELDLIST(X, a) \
@@ -96,8 +97,8 @@ extern const pb_msgdesc_t ArduinoReply_BatteryResult_msg;
 #define ArduinoReply_BatteryResult_fields &ArduinoReply_BatteryResult_msg
 
 /* Maximum encoded size of messages (where known) */
-/* ArduinoReply_size depends on runtime parameters */
-/* ArduinoReply_WifiScanResult_size depends on runtime parameters */
+#define ArduinoReply_size                        1037
+#define ArduinoReply_WifiScanResult_size         101
 #define ArduinoReply_BatteryResult_size          5
 
 #ifdef __cplusplus

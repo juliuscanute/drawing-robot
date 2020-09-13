@@ -10,4 +10,4 @@ message ArduinoCommand {
     CommandType command = 1;
 	string service_set_id = 2 [(nanopb).max_size = 32];
 	string network_key = 3 [(nanopb).max_size = 32];
-}nanopb_generator.exe --nanopb_out=lib/message arduino.proto
+}
