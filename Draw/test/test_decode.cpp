@@ -24,4 +24,13 @@ void test_valid_decode_max_request_data()
     TEST_ASSERT_EQUAL_STRING("0123456789012345678901234567890", message.network_key);
 }
 
+void test_valid_decode_reply_data()
+{
+    ArduinoReply reply = ArduinoReply_init_zero;
+    memset(&reply, 0xAA, sizeof(reply));
+    uint8_t buffer[] = {'\x0a','\x2e','\x0a','\x0b','\x6d','\x61','\x63','\x20','\x61','\x64','\x64','\x72','\x65','\x73','\x73','\x12','\x0f','\x73','\x69','\x67','\x6e','\x61','\x6c','\x20','\x73','\x74','\x72','\x65','\x6e','\x67','\x74','\x68','\x1a','\x0e','\x73','\x65','\x72','\x76','\x69','\x63','\x65','\x20','\x73','\x65','\x74','\x20','\x69','\x64','\x12','\x05','\x0d','\x00','\x00','\x40','\x41'};
+    bool status = decode(&reply, buffer, 55);
+    TEST_ASSERT_EQUAL(true, status);
+}
+
 #endif

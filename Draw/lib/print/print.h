@@ -16,6 +16,13 @@
         printf("\\x%.2x", buffer[i]);          \
     }                                          \
     printf("\n");
+#define PRINTLN_LOG_RANGE(buffer, range) \
+    for (size_t i = 0; i < range; ++i)   \
+    {                                    \
+        printf("\\x%.2x", buffer[i]);    \
+    }                                    \
+    printf("\n");
+
 #define PRINT_CONST(value)        \
     {                             \
         const char *text = value; \
@@ -33,6 +40,18 @@
     }                                          \
     printf("}");                               \
     printf("\n");
+#define PRINTLN_ARRAY_RANGE(buffer, range) \
+    printf("Range: %d {", range);          \
+    for (size_t i = 0; i < range; ++i)     \
+    {                                      \
+        if (i > 0)                         \
+        {                                  \
+            printf(",");                   \
+        }                                  \
+        printf("\'\\x%.2x\'", buffer[i]);  \
+    }                                      \
+    printf("}");                           \
+    printf("\n");
 #else
 #define PRINTLN_ENCODE_SIZE(buffer) \
     {                               \
@@ -45,6 +64,12 @@
     }
 #define PRINTLN_ARRAY(buffer) \
     {                         \
+    }
+#define PRINTLN_ARRAY_RANGE(buffer, range) \
+    {                                      \
+    }
+#define PRINTLN_LOG_RANGE(buffer, range) \
+    {                                    \
     }
 #endif
 #endif
