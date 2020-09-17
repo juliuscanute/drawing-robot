@@ -1,14 +1,17 @@
 #include "encoder.h"
 #include "decoder.h"
+#include "looper.h"
 
 #ifndef UNIT_TEST
 #include <Arduino.h>
 
-void setup() {
+void setup()
+{
   Serial.begin(9600);
 }
 
-void loop() {
+void loop()
+{
   delay(1000);
 }
 #endif
