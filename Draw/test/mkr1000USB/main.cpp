@@ -12,24 +12,26 @@ extern void test_valid_encode_request_data();
 extern void test_valid_encode_request_max_data();
 extern void test_valid_decode_max_request_data();
 
-void printEncryptionType(int thisType) {
+void printEncryptionType(int thisType)
+{
   // read the encryption type and print out the name:
-  switch (thisType) {
-    case ENC_TYPE_WEP:
-      Serial.println("WEP");
-      break;
-    case ENC_TYPE_TKIP:
-      Serial.println("WPA");
-      break;
-    case ENC_TYPE_CCMP:
-      Serial.println("WPA2");
-      break;
-    case ENC_TYPE_NONE:
-      Serial.println("None");
-      break;
-    case ENC_TYPE_AUTO:
-      Serial.println("Auto");
-      break;
+  switch (thisType)
+  {
+  case ENC_TYPE_WEP:
+    Serial.println("WEP");
+    break;
+  case ENC_TYPE_TKIP:
+    Serial.println("WPA");
+    break;
+  case ENC_TYPE_CCMP:
+    Serial.println("WPA2");
+    break;
+  case ENC_TYPE_NONE:
+    Serial.println("None");
+    break;
+  case ENC_TYPE_AUTO:
+    Serial.println("Auto");
+    break;
   }
 }
 
@@ -53,6 +55,19 @@ void test_list_networks()
   TEST_ASSERT_TRUE(numSsid > 0);
 }
 
+void test_access_point()
+{
+  TEST_ASSERT_EQUAL_INT(WL_AP_LISTENING, WiFi.beginAP("MKR1000APTEST"));
+  IPAddress ip = WiFi.localIP();
+  IPAddress expected(192, 168, 1, 1);
+  TEST_ASSERT_EQUAL(expected, ip);
+}
+
+void test_wifi_server()
+{
+  WiFiServer server(8080);
+  // TEST_ASSERT_EQUAL(true, server.begin());
+}
 void setup()
 {
   delay(5000);
@@ -61,7 +76,9 @@ void setup()
   // RUN_TEST(test_valid_encode_request_data);
   // RUN_TEST(test_valid_encode_request_max_data);
   // RUN_TEST(test_valid_decode_max_request_data);
-  RUN_TEST(test_list_networks);
+  // RUN_TEST(test_list_networks);
+  RUN_TEST(test_access_point);
+  // RUN_TEST(test_wifi_server);
   UNITY_END();
 }
 
