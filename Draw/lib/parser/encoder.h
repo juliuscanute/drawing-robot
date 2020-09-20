@@ -11,7 +11,7 @@ struct encode_info
     int encode_size;
 };
 #define ENCODE_FUNCTION_DEC(type) \
-    encode_info encode(const type *message, uint8_t *buffer, size_t buffer_size);
+    encode_info encode(const type *message, pb_ostream_t &stream);
 ENCODE_FUNCTION_DEC(ArduinoCommand)
 ENCODE_FUNCTION_DEC(ArduinoReply)
 #endif

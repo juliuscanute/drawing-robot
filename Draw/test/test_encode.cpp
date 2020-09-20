@@ -9,7 +9,8 @@ void test_valid_encode_request_data()
         ArduinoCommand_CommandType_BATTERY,
         "SampleNetwork",
         "SampleKey"};
-    encode_info info = encode(&message, buffer, ArduinoCommand_size);
+    pb_ostream_s stream = pb_ostream_from_buffer(buffer, ArduinoCommand_size);
+    encode_info info = encode(&message, stream);
     PRINTLN_LOG_RANGE(buffer, info.encode_size);
     PRINTLN_ARRAY_RANGE(buffer, info.encode_size)
     TEST_ASSERT_EQUAL(true, info.status);
@@ -23,7 +24,8 @@ void test_valid_encode_request_max_data()
         ArduinoCommand_CommandType_SCAN,
         "0123456789012345678901234567890", //supports 31 characters + '\0' for end of string
         "0123456789012345678901234567890"};
-    encode_info info = encode(&message, buffer, ArduinoCommand_size);
+    pb_ostream_s stream = pb_ostream_from_buffer(buffer, ArduinoCommand_size);
+    encode_info info = encode(&message, stream);
     PRINTLN_LOG_RANGE(buffer, info.encode_size);
     PRINTLN_ARRAY_RANGE(buffer, info.encode_size)
     TEST_ASSERT_EQUAL(true, info.status);
@@ -34,7 +36,8 @@ void test_valid_encode_reply_data()
 {
     uint8_t buffer[ArduinoReply_size];
     ArduinoReply reply = {1, {"mac address", "signal strength", "service set id", ArduinoReply_EncryptionType_NONE}, true, {12.0f}};
-    encode_info info = encode(&reply, buffer, ArduinoReply_size);
+    pb_ostream_s stream = pb_ostream_from_buffer(buffer, ArduinoReply_size);
+    encode_info info = encode(&reply, stream);
     PRINTLN_LOG_RANGE(buffer, info.encode_size);
     PRINTLN_ARRAY_RANGE(buffer, info.encode_size)
     TEST_ASSERT_EQUAL(true, info.status);

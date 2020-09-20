@@ -6,7 +6,7 @@
 #include "pb.h"
 #include "pb_decode.h"
 #define DECODE_FUNCTION_DEC(type) \
-    bool decode(type *message, uint8_t *buffer, size_t length);
+    bool decode(type *message, pb_istream_s &stream);
 DECODE_FUNCTION_DEC(ArduinoCommand)
 DECODE_FUNCTION_DEC(ArduinoReply)
 #endif

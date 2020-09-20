@@ -2,9 +2,8 @@
 #include <print.h>
 
 #define ENCODE_FUNCTION_DEF(type)                                                     \
-  encode_info encode(const type *message, uint8_t *buffer, size_t buffer_size)        \
+  encode_info encode(const type *message, pb_ostream_t &stream)                        \
   {                                                                                   \
-    pb_ostream_t stream = pb_ostream_from_buffer(buffer, buffer_size);                \
     bool status = pb_encode(&stream, type##_fields, message);                         \
     size_t encode_size = 0;                                                           \
     encode_info info;                                                                 \

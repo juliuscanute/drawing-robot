@@ -4,6 +4,7 @@
 #include <Arduino.h>
 #include <SPI.h>
 #include <WiFi101.h>
+#include <pb_arduino.h>
 #include "unity.h"
 
 // setup connects serial, runs test cases (upcoming)
@@ -65,19 +66,20 @@ void test_access_point()
 
 void test_wifi_server()
 {
-  WiFiServer server(8080);
-  // TEST_ASSERT_EQUAL(true, server.begin());
+  WiFiClient client;
+  pb_istream_s pb_in = as_pb_istream(client);
+  pb_ostream_s pb_out = as_pb_ostream(client);
 }
 void setup()
 {
   delay(5000);
   UNITY_BEGIN();
-  // RUN_TEST(test_valid_decode_request_data);
-  // RUN_TEST(test_valid_encode_request_data);
-  // RUN_TEST(test_valid_encode_request_max_data);
-  // RUN_TEST(test_valid_decode_max_request_data);
+  RUN_TEST(test_valid_decode_request_data);
+  RUN_TEST(test_valid_encode_request_data);
+  RUN_TEST(test_valid_encode_request_max_data);
+  RUN_TEST(test_valid_decode_max_request_data);
   // RUN_TEST(test_list_networks);
-  RUN_TEST(test_access_point);
+  // RUN_TEST(test_access_point);
   // RUN_TEST(test_wifi_server);
   UNITY_END();
 }
