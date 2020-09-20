@@ -2,7 +2,7 @@
 #include "decoder.h"
 #include "looper.h"
 
-#ifndef UNIT_TEST
+#if defined(ARDUINO) && !defined(UNIT_TEST)
 #include <Arduino.h>
 
 void setup()
@@ -13,5 +13,11 @@ void setup()
 void loop()
 {
   delay(1000);
+}
+
+#else
+int main()
+{
+  return 0;
 }
 #endif

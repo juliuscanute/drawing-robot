@@ -1,6 +1,6 @@
 #include <looper.h>
-#include <SPI.h>
-#include <WiFi101.h>
+// #include <SPI.h>
+// #include <WiFi101.h>
 
 void looper()
 {
@@ -9,6 +9,6 @@ void looper()
     // send_output(&send_message);
 }
 
-ArduinoCommand read_input()
-{
-}
+// ArduinoCommand read_input()
+// {
+// }
